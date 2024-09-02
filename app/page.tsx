@@ -97,6 +97,12 @@ function SearchParams({ setCriteria }: SearchCriteriaProps) {
 
   function handleSelectionChange(event: ChangeEvent<HTMLSelectElement>) {
     setSelectedType(event.target.value);
+
+    // Remove filter if "All" is selected
+    if (event.target.value === "all") {
+      setCriteria({ recordType: undefined });
+      return;
+    }
     setCriteria({ recordType: event.target.value as RecordType });
   }
 
