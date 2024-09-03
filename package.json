@@ -10,17 +10,23 @@
   },
   "dependencies": {
     "@pinecone-database/pinecone": "^3.0.2",
+    "@reduxjs/toolkit": "^2.2.7",
+    "dompurify": "^3.1.6",
     "next": "14.2.7",
     "openai": "^4.57.0",
     "react": "^18",
     "react-dom": "^18",
     "react-dropzone": "^14.2.3",
+    "react-redux": "^9.1.2",
+    "redux-persist": "^6.0.0",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/redux-persist": "^4.3.1",
     "@types/uuid": "^10.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",

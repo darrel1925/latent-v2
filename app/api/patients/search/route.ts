@@ -14,3 +14,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
+
+
+/* 
+Take a large problem and break it down into smaller problems
+ - Spec things out into smaller detailed chunks
+ - Address it in parts
+ - Able to do this across the stack
+ - Very useful to go frontend to backend
+*/

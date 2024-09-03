@@ -2,7 +2,7 @@ import { pinecone } from "@/lib/pinecone";
 import { PatientRecord } from "@/types";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest, res: NextResponse) {
   try {
     const newRecord: PatientRecord = await req.json();
     await pinecone.addPatientRecord(newRecord);
@@ -13,6 +13,6 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export async function GET(req: NextRequest) {
+export async function GET(req: NextRequest, res: NextResponse) {
   return NextResponse.json({ message: "GET request received" });
 }

@@ -45,3 +45,12 @@ export function recordTypeToLabel(type: string) {
       return type;
   }
 }
+
+
+export interface NecessityLetter {
+  id: string;
+  patientId: string;
+  content: string;
+  uploadedAt: number;
+  prompt: string;
+}

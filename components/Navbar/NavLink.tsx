@@ -8,17 +8,14 @@ export default function NavLink({ label, pathname }: { label: string; pathname: 
   const notSelectedStyle = "border-transparent";
   const selectedStyle = "border-gray-100 ";
 
-  console.log("path", path);
-  console.log("pathname", pathname);
-  console.log("label", label);
-
   return (
-    <div
+    <Link
+      href={pathname}
       className={`p-2 border-2 rounded-xl text-white hover:bg-gray-700  ${
         path === pathname ? selectedStyle : notSelectedStyle
       }`}
     >
-      <Link href={pathname}>{label}</Link>
-    </div>
+      {label}
+    </Link>
   );
 }

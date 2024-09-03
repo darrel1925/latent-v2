@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import NavLink from "./NavLink";
+import { CLIENT_ROUTE } from "@/constants/routes";
 
 export default function Navbar() {
   return (
@@ -12,9 +13,10 @@ export default function Navbar() {
             Patient Records
           </Link>
         </div>
-        <div className="flex space-x-8">
-          <NavLink label="Add new record" pathname="/add" />
-          <NavLink label="Search records" pathname="/" />
+        <div className="flex space-x-2">
+          <NavLink label="Add new record" pathname={CLIENT_ROUTE.ADD} />
+          <NavLink label="Search records" pathname={CLIENT_ROUTE.SEARCH} />
+          <NavLink label="Necessity letter" pathname={CLIENT_ROUTE.LETTER} />
         </div>
       </div>
     </div>

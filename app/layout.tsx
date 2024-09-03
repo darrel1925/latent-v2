@@ -1,4 +1,5 @@
 // app/search/layout.tsx
+import StoreProvider from "@/components/other/StoreProvider";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar/Navbar";
@@ -14,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
+        <StoreProvider>
+          <Navbar />
+          {children}
+        </StoreProvider>
       </body>
     </html>
   );

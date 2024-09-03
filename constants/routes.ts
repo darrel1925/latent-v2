@@ -3,9 +3,11 @@ export const SERVER_ROUTE = {
     SEARCH: "/api/patients/search",
     ADD: "/api/patients/add",
   },
+  LETTER: "/api/stream-letter",
 };
 
 export const CLIENT_ROUTE = {
-  HOME: "/",
-  PATIENT_LIST: "/patients",
+  SEARCH: "/",
+  ADD: "/add",
+  LETTER: "/letter",
 };

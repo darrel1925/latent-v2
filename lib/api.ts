@@ -12,7 +12,7 @@ export async function fetchPatientRecords(
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(criteria),
     });
-
+    
     if (!response.ok) {
       throw new Error("Failed to fetch patient records");
     }
